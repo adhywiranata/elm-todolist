@@ -6,11 +6,73 @@ body {
 
 .header {
   width: 100%;
-  padding: 20px 20px;
+  padding: 10px 20px;
   display: inline-block;
   box-sizing: border-box;
-  background-color: #353535;
+  background-color: #1184CE;
   color: #FFFFFF;
+}
+
+.logo {
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 15px;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5em;
+  vertical-align: 15px;
+}
+
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 500px;
+}
+
+.todo-heading {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.todo-item {
+  text-align: center;
+  background-color: #F5F5F5;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.todo-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.4em;
+  outline: none;
+}
+
+.todo-list {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.todo-item h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.footer {
+  background-color: #222222;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 40px 20px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -28,10 +90,12 @@ body {
   color: white;
   transition: 0.3s;
   border-radius: 10px;
+  border: 2px solid transparent;
   margin: 5px;
 }
 
 .main-nav > ul > a > li:hover {
-  background-color: #555555;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
   transition: 0.3s;
 }
