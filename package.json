@@ -16,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/ngopract-lab/elm-todo/issues"
   },
-  "homepage": "https://github.com/ngopract-lab/elm-todo#readme"
+  "homepage": "https://github.com/ngopract-lab/elm-todo#readme",
+  "dependencies": {
+    "ace-css": "^1.1.0",
+    "css-loader": "^0.28.0",
+    "elm-webpack-loader": "^4.3.0",
+    "file-loader": "^0.10.1",
+    "font-awesome": "^4.7.0",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
 }
