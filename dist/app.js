@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 16);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -77,8 +77,8 @@
 // require('font-awesome/css/font-awesome.css');
 
 // Require index.html so it gets copied to dist
-__webpack_require__(9);
-__webpack_require__(14);
+__webpack_require__(6);
+__webpack_require__(11);
 
 var Elm = __webpack_require__(5);
 
@@ -227,8 +227,8 @@ function fromByteArray (uint8) {
 
 
 var base64 = __webpack_require__(1)
-var ieee754 = __webpack_require__(10)
-var isArray = __webpack_require__(11)
+var ieee754 = __webpack_require__(7)
+var isArray = __webpack_require__(8)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -2006,7 +2006,7 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ }),
 /* 3 */
@@ -10554,19 +10554,7 @@ var _user$project$Main$init = {
 		1,
 		'Sample Description',
 		'',
-		{
-			ctor: '::',
-			_0: 'beli bola',
-			_1: {
-				ctor: '::',
-				_0: 'mandi',
-				_1: {
-					ctor: '::',
-					_0: 'tidur',
-					_1: {ctor: '[]'}
-				}
-			}
-		}),
+		{ctor: '[]'}),
 	_1: _elm_lang$core$Platform_Cmd$none
 };
 var _user$project$Main$AddTodo = function (a) {
@@ -10742,16 +10730,13 @@ for (var publicModule in Elm)
 
 
 /***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "index.html";
 
 /***/ }),
-/* 10 */
+/* 7 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -10841,7 +10826,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 11 */
+/* 8 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -10852,7 +10837,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 12 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -10889,7 +10874,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(13);
+	fixUrls = __webpack_require__(10);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -11148,7 +11133,7 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 13 */
+/* 10 */
 /***/ (function(module, exports) {
 
 
@@ -11243,7 +11228,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 14 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -11252,7 +11237,7 @@ module.exports = function (css) {
 var content = __webpack_require__(3);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(12)(content, {});
+var update = __webpack_require__(9)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -11269,7 +11254,7 @@ if(false) {
 }
 
 /***/ }),
-/* 15 */
+/* 12 */
 /***/ (function(module, exports) {
 
 var g;
@@ -11296,7 +11281,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 16 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);
