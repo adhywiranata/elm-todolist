@@ -4,10 +4,13 @@
 
 ## using Webpack
 
-### installing packages
+### installation
+
 ``
 elm package install <package_name>
 ``
+
+### installing packages
 
 ### installation
 ``
