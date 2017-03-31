@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+}
+
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #353535;
+  color: #FFFFFF;
+}
+
+.logo {
+  float: left;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav > ul > a > li {
+  list-style: none;
+  float: left;
+  padding: 20px;
+  color: white;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.main-nav > ul > a > li:hover {
+  background-color: #555555;
+  transition: 0.3s;
+}
