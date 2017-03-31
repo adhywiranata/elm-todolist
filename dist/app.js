@@ -10510,23 +10510,8 @@ var _user$project$Main$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{
-							todos: {
-								ctor: '::',
-								_0: _p0._0,
-								_1: {
-									ctor: '::',
-									_0: 'beli bola',
-									_1: {
-										ctor: '::',
-										_0: 'mandi',
-										_1: {
-											ctor: '::',
-											_0: 'tidur',
-											_1: {ctor: '[]'}
-										}
-									}
-								}
-							}
+							todos: {ctor: '::', _0: _p0._0, _1: model.todos},
+							todoInput: ''
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
@@ -10568,7 +10553,7 @@ var _user$project$Main$init = {
 		'TodoApp',
 		1,
 		'Sample Description',
-		'wow',
+		'',
 		{
 			ctor: '::',
 			_0: 'beli bola',
@@ -10653,7 +10638,7 @@ var _user$project$Main$view = function (model) {
 											{
 												ctor: '::',
 												_0: _elm_lang$html$Html_Events$onSubmit(
-													_user$project$Main$AddTodo('Makan')),
+													_user$project$Main$AddTodo(model.todoInput)),
 												_1: {ctor: '[]'}
 											},
 											{
