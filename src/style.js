@@ -19,9 +19,9 @@ export default StyleSheet.create({
     },
     "header": {
         "width": "100%",
-        "paddingTop": 10,
+        "paddingTop": 20,
         "paddingRight": 20,
-        "paddingBottom": 10,
+        "paddingBottom": 20,
         "paddingLeft": 20,
         "display": "inline-block",
         "boxSizing": "border-box",
