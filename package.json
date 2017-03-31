@@ -6,6 +6,7 @@
   "scripts": {
     "api": "node api.js",
     "build": "webpack",
+    "watch-build": "webpack --watch --progress",
     "client": "webpack-dev-server --port 3000"
   },
   "repository": {
