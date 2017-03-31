@@ -4,10 +4,6 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onInput, onClick, onSubmit, targetValue)
 import Header
-
-
--- import Content
-
 import Footer
 
 
