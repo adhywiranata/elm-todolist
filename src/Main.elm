@@ -20,6 +20,7 @@ type alias Model =
     , appDescription : String
     , todoInput : String
     , todos : List Todo
+    , todosAvailId : Int
     }
 
 
@@ -31,6 +32,7 @@ init =
         "Super Simple Todo App"
         ""
         []
+        0
     , Cmd.none
     )
 
@@ -46,7 +48,8 @@ type Msg
 renderTodo : Todo -> Html Msg
 renderTodo todo =
     div [ class "todo-item" ]
-        [ span [] [ text todo.task ]
+        [ span [ class "todo-id" ] [ text (toString todo.id) ]
+        , span [] [ text todo.task ]
         , span [ class "complete-status" ] [ text (toString todo.completed) ]
         ]
 
@@ -102,12 +105,13 @@ update msg model =
         AddTodo newTodo ->
             ( { model
                 | todos =
-                    { id = 1
+                    { id = model.todosAvailId + 1
                     , task = newTodo
                     , completed = False
                     }
                         :: model.todos
                 , todoInput = ""
+                , todosAvailId = model.todosAvailId + 1
               }
             , Cmd.none
             )
