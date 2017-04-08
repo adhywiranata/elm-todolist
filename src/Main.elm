@@ -33,6 +33,7 @@ type Msg
     | UpdateTodoInput String
     | AddTodo String
     | DeleteTodo String
+    | UpdateTodo String
 
 
 renderTodo : String -> Html Msg
@@ -90,6 +91,10 @@ update msg model =
         -- add new todo
         AddTodo newTodo ->
             ( { model | todos = newTodo :: model.todos, todoInput = "" }, Cmd.none )
+
+        -- update todo by name
+        UpdateTodo todoToUpdate ->
+            ( model, Cmd.none )
 
         -- delete todo by name
         DeleteTodo todoToDelete ->
