@@ -28,7 +28,7 @@ init =
     ( Model
         "TodoApp"
         1
-        "Sample Description"
+        "Super Simple Todo App"
         ""
         []
     , Cmd.none
