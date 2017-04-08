@@ -6,7 +6,7 @@ body {
 
 .header {
   width: 100%;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: inline-block;
   box-sizing: border-box;
   background-color: #1184CE;
@@ -30,30 +30,31 @@ body {
 }
 
 .content {
-  width: 100%;
+  width: 70%;
   box-sizing: border-box;
   padding: 20px;
   min-height: 500px;
+  margin: 0 auto;
 }
 
 .todo-heading {
   text-align: center;
-  font-size: 1.7em;
-}
-
-.todo-item {
-  text-align: center;
-  background-color: #F5F5F5;
-  padding: 10px 20px;
-  margin: 10px 0;
+  font-size: 1.2em;
+  color: #446CB3;
 }
 
 .todo-input {
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
-  padding: 10px;
-  font-size: 1.4em;
+  padding: 15px 20px;
+  font-size: 1em;
   outline: none;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 5px;
+}
+
+.todo-list-heading {
+  padding-top: 30px;
 }
 
 .todo-list {
@@ -61,18 +62,30 @@ body {
   margin-top: 30px;
 }
 
+.todo-item {
+  text-align: center;
+  background-color: #FDFDFD;
+  padding: 20px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, .1);
+}
+
 .todo-item h2 {
   font-weight: bold;
   font-size: 1.3em;
+  margin-top: 10px;
 }
 
 .footer {
-  background-color: #222222;
-  color: #FFFFFF;
+  background-color: #F5F5F5;
+  color: #666;
   width: 100%;
   padding: 40px 20px;
   display: inline-block;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .logo {
@@ -86,7 +99,7 @@ body {
 .main-nav > ul > a > li {
   list-style: none;
   float: left;
-  padding: 20px;
+  padding: 10px;
   color: white;
   transition: 0.3s;
   border-radius: 10px;
