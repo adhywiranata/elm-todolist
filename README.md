@@ -1,13 +1,10 @@
 # Elm Todo :pencil:
+This is a sample todo App using Elm 😎
 
 ## Documentation
 
 Webpack installations based on
-[elm webpack tutorial](https://www.elm-tutorial.org/en/04-starting/03-webpack-1.html)
-
-## using Elm
-
-## using Webpack
+[elm webpack tutorial](https://www.elm-tutorial.org/en/04-starting/03-webpack-1.html) 🔗
 
 ### installation
 
