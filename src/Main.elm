@@ -7,6 +7,13 @@ import Header
 import Footer
 
 
+type alias Todo =
+    { id : Int
+    , task : String
+    , completed : Bool
+    }
+
+
 type alias Model =
     { appTitle : String
     , appVersion : Int
