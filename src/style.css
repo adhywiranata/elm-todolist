@@ -78,6 +78,11 @@ body {
   margin-top: 10px;
 }
 
+.todo-item .complete-status {
+  color: #666;
+  float: right;
+}
+
 .footer {
   background-color: #F5F5F5;
   color: #666;
