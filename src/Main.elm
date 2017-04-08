@@ -65,7 +65,9 @@ view model =
                         ]
                         []
                     ]
-                , span [] [ text ("My Todos: " ++ toString (List.length model.todos)) ]
+                , div
+                    [ class "todo-list-heading" ]
+                    [ text ("My Todos: " ++ toString (List.length model.todos)) ]
                 ]
             , renderTodos model.todos
             ]
