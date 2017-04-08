@@ -7,4 +7,4 @@ import Html.Attributes exposing (..)
 view : Html msg
 view =
     div [ class "footer" ]
-        [ text "this is the footer" ]
+        [ text "made by Adhy Wiranata" ]
