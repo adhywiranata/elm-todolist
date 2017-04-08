@@ -19,7 +19,7 @@ type alias Model =
     , appVersion : Int
     , appDescription : String
     , todoInput : String
-    , todos : List String
+    , todos : List Todo
     }
 
 
@@ -43,12 +43,15 @@ type Msg
     | UpdateTodo String
 
 
-renderTodo : String -> Html Msg
+renderTodo : Todo -> Html Msg
 renderTodo todo =
-    div [ class "todo-item" ] [ text todo ]
+    div [ class "todo-item" ]
+        [ span [] [ text todo.task ]
+        , span [ class "complete-status" ] [ text (toString todo.completed) ]
+        ]
 
 
-renderTodos : List String -> Html Msg
+renderTodos : List Todo -> Html Msg
 renderTodos todos =
     let
         todoItems =
@@ -97,7 +100,17 @@ update msg model =
 
         -- add new todo
         AddTodo newTodo ->
-            ( { model | todos = newTodo :: model.todos, todoInput = "" }, Cmd.none )
+            ( { model
+                | todos =
+                    { id = 1
+                    , task = newTodo
+                    , completed = False
+                    }
+                        :: model.todos
+                , todoInput = ""
+              }
+            , Cmd.none
+            )
 
         -- update todo by name
         UpdateTodo todoToUpdate ->
